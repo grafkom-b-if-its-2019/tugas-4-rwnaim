@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Belajar WebGL</title>
-  <style>
-    body {
-    font-family: 'Poppins';
-}
-  </style>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <title>Rana Wijdan Naim</title>
 </head>
 <body>
-  <canvas id="glcanvas" width="640" height="480">
+  <!--canvas id="glcanvas" width="640" height="480">
     Browser Anda tidak mendukung HTML5 <code>&lt;canvas&gt;</code>.
-  </canvas>
+  </canvas-->
+
+  <div class="scene">
+    <canvas id="glcanvas" width="640" height="640"
+    >Browser anda tidak mendukung html5
+    </canvas>
+    <h3>Cara Kontrol Huruf (Nama) :</h3>
+    <p>Keyboard arah untuk merubah  axis x dan y <br> W dan S untuk axis z</p>
+  </div>
 
   <!-- Shaders -->
   <script name="shader" data-src="vertex.glsl" data-type="vertex" data-version="v1"></script>
@@ -22,18 +27,14 @@
   <script name="shader" data-src="vertex2.glsl" data-type="vertex" data-version="v2"></script>
   <script name="shader" data-src="fragment2.glsl" data-type="fragment" data-version="v2"></script>
 
-  <h2>Cara mengatur arah rotasi kubus</h2>
-  <p>Tekan <b>X</b> agar kubus berputar terhadap sumbu x</p>
-  <p>Tekan <b>Y</b> agar kubus berputar terhadap sumbu y</p>
-  <p>Tekan <b>Z</b> agar kubus berputar terhadap sumbu z</p>
-  <p>Tekan <b>S</b> untuk stop rotasi, dan <b>P</b> untuk melanjutkan rotasi</p>
-
   <!-- Library untuk men-dispatch methods -->
   <script type="text/javascript" src="libs/signals.js"></script>
+
   <script type="text/javascript" src="libs/gl-matrix-min.js"></script>
 
   <!-- JavaScript untuk menghubungkan ke WebGL -->
   <script type="text/javascript" src="libs/glUtils.js"></script>
+  <script type="text/javascript" src="libs/transformasi_geometri.js"></script>
 
   <!-- JavaScript utama kita -->
   <script type="text/javascript" src="index.js"></script>

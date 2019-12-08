@@ -352,34 +352,34 @@
     }
 
     function handleKeys() {
-      if (currentPressedKeys[37]) {
+      if (currentPressedKeys[65]) {
           // Kiri
           pos[0] -= 0.05;
-          console.log("kiri");
+          console.log("a");
       }
 
-      if (currentPressedKeys[39]) {
+      if (currentPressedKeys[68]) {
           // Kanan
           pos[0] += 0.05;
-          console.log("kanan");
-      }
-
-      if (currentPressedKeys[38]) {
-          // Atas
-          pos[1] += 0.05;
-          console.log("atas");
-      }
-
-      if (currentPressedKeys[40]) {
-          // Bawah
-          pos[1] -= 0.05;
-          console.log("bawah");
+          console.log("d");
       }
 
       if (currentPressedKeys[87]) {
+          // Atas
+          pos[1] += 0.05;
+          console.log("w");
+      }
+
+      if (currentPressedKeys[90]) {
+          // Bawah
+          pos[1] -= 0.05;
+          console.log("z");
+      }
+
+      if (currentPressedKeys[67]) {
       
         pos[2] += 0.05;
-        console.log("w");
+        console.log("c");
       }
 
       if (currentPressedKeys[83]) {

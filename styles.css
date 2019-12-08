@@ -6,7 +6,13 @@ body{
 .scene {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.petunjuk {
+    position: absolute;
+    top: 50%;
+    right: 15%;
     transform: translate(-50%, -50%);
 }
 
@@ -14,7 +20,7 @@ p{
     color: white;
     text-align: center;
 }
-h3{
+h2{
     color: white;
     text-align: center;
 }
